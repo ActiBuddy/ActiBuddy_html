@@ -261,3 +261,15 @@ main{
     margin:1.6%;
     margin-bottom: 10px;
 }
+
+/* --------------------------- */
+.bestreview {
+    width: 82%;
+    height: 230px;
+    margin: 100px auto 0px auto;
+    background-color: pink;
+
+}
+
+
+
