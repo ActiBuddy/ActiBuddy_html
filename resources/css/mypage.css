@@ -14,10 +14,14 @@
     padding-bottom: 30px;
     padding-top: 80px; */
 }
-.page-text h2 {
+.page-text {
     position: relative;
-    left: 26%;
-}
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid blue;
+  }
+  
 .body-all {
     position: relative;
     left: 0%;
@@ -39,7 +43,7 @@
 }
 .side-1 > img {
     position: relative;
-    left: 30%;
+    left: 35%;
 }
 .side-1 h4 {
     position: relative;
@@ -63,18 +67,18 @@
     margin: 80px;
 }
 .container {
-    background: rgba(249, 249, 249, 1); 
+    background: rgb(131, 94, 94); 
     position: relative;
 }
 .center-all{
     position: relative;
-    left: 20%;
-    float: right;
-    width: 75%;
+    display: inline-block;
+    left: 24%;
+    width: 40%;
 
 }
 .center-1 {
-    width: 600px;
+    width: 610px;
     height: 500px;
     border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
     margin-bottom: 20px;
@@ -95,12 +99,12 @@
     border-style: solid; box-shadow: 2px 2px 3px 2px gray;
 }
 .center-2 textarea {
-    width: 595px;
+    width: 580px;
     height: 200px;
     border-style: hidden;
 }
 #text1 {
-    width: 595px;
+    width: 580px;
     height: 300px;
     border-style: hidden;
 }
@@ -112,12 +116,16 @@
     height: 40px;
     cursor: pointer;
     position: relative;
-    left: 73%;
+
     top: 6%;
 }
 .center-2 h5 {
     display: inline-block
 }
+/* .all {
+    background:  red;
+    background-position: 100%100%;
+} */
 
 /* ----------------회원탈퇴------------------ */
 .q-side-all {
@@ -163,8 +171,7 @@
 /* -----------여행내역------------- */
 .a-center-all{
     position: relative;
-    left: 20%;
-    float: right;
+    left: 45%;
     width: 75%;
 
 }
@@ -199,9 +206,9 @@
 .payment {
     display: inline-block;
 }
-/* .a-center-text {
+.a-center-text {
     margin-left: 20px;
-} */
+}
 
 /* -----------메이트 후기 작성------------- */
 .m-center-all{
@@ -251,10 +258,10 @@
     margin-bottom: 3px;
     margin-top: 3px;
 }
-.r-center-1 h2,h3,h4,h5,h6,textarea{
+/* .r-center-1 > h2,h3,h4,h5,h6,textarea{
     margin-left: 10px;
 
-}
+} */
 textarea {
     width: 550px;
     height: 200px;  
