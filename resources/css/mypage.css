@@ -215,3 +215,18 @@
     border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
     margin-bottom: 20px;
 }
+.one-line h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.one-line {
+    display: flex;
+}
+.one-line button {
+    position: relative;
+    left: 245px;
+}
+#complete{
+    float: right;
+    margin-right: 10px;
+}
