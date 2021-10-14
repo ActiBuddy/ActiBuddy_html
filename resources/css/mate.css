@@ -27,7 +27,7 @@
 .mate_review1 img {
     position: relative;
     left: 8%;
-    width: 13%;
+    width: 13.7%;
     height: auto;
 }
 
@@ -124,10 +124,10 @@
 .mate_find1 img {
     position: relative;
     left: 8%;
-    width: 13%;
+    width: 13.9%;
     height: auto;
     margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .mate_tabs {
@@ -136,7 +136,7 @@
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 80%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
 }
 
   
@@ -198,7 +198,8 @@
 
 }
 
-table.write {
+  table {
+  /* width: 100%; */
     border-collapse: collapse;
     text-align: left;
     line-height: 1.5;
@@ -206,26 +207,28 @@ table.write {
     border-bottom: 1px solid #ccc;
     margin: 20px 10px;
   }
-  table.write thead th {
-    width: 150px;
+  table thead th {
+    width: 300px;
     padding: 10px;
     font-weight: bold;
     vertical-align: top;
     color: #fff;
     background: gainsboro;
     margin: 20px 10px;
+    text-align: center;
   }
-  table.write tbody th {
-    width: 150px;
+  table tbody th {
+    /* height: 50px; */
+    /* width: 100px; */
     padding: 10px;
+    text-align: center;
   }
-  table.write td {
-    width: 350px;
+  table td {
+    /* height: 50px; */
+    width: 50px;
     padding: 10px;
     vertical-align: top;
-  }
-  table.write .even {
-    background: gainsboro;
+    text-align: center;
   }
 
 /* .post div{
@@ -243,10 +246,40 @@ table.write {
   
   /* 선택 된 탭 콘텐츠를 표시 */
   #all:checked ~ #all_content,
-  #refund:checked ~ #refund_content,
-  #payment:checked ~ #payment_content,
-  #coupon:checked ~ #coupon_content,
-  #account:checked ~ #account_content,
-  #point:checked ~ #point_content {
+  #gyeonggi:checked ~ #gyeonggi_content,
+  #gangwon:checked ~ #gangwon_content,
+  #chungcheong:checked ~ #chungcheong_content,
+  #jeolla:checked ~ #jeolla_content,
+  #gyeongsang:checked ~ #gyeongsang_content,
+  #busan:checked ~ #busan_content,
+  #jeju:checked ~ #jeju_content {
     display: block;
+  }
+
+  .write{
+    position:relative;
+    width: 120px;
+    height: 40px;
+    margin: 0 10% 50px 80%;
+    background-color: pink;
+  }
+
+  .write button{
+    height: 40px;
+    width: 120px;
+    background-color: olivedrab;
+  }
+
+
+
+  .searchtext {
+    margin-left: 30%;
+    margin-bottom: 5%;
+    width:30%;
+    height: 25px;
+  }
+  
+  .searchbutton{
+    width: 5%;
+    height: 32px;
   }
