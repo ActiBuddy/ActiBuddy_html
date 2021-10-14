@@ -252,3 +252,15 @@ main {
 .gif p {
   /* margin-bottom: 20px; */
 }
+
+/* --------------------------- */
+.bestreview {
+    width: 82%;
+    height: 230px;
+    margin: 100px auto 0px auto;
+    background-color: pink;
+
+}
+
+
+

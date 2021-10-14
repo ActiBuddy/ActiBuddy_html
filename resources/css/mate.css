@@ -1,0 +1,28 @@
+.mate_logo img{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.mate_ad {
+   width: 80%;
+/* 이미지 가운데 정렬해주는 속성 */
+   display: block;
+   margin: 0px auto; 
+}
+
+.mate_ad img{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.mate_review {
+    width: 82%;
+    height: 230px;
+    margin-top: 70px;
+    background-color: pink;
+}
+
+.mate_review img {
+    width: 250px;
+    height: 60px;
+}
