@@ -1,7 +1,7 @@
 .logo {
   height: 400px;
   padding-top: 100px;
-  background: rgba(249, 249, 249, 1);
+  background: rgba(240, 240, 240, 1);
 }
 .logo > img {
   position: relative;
@@ -254,7 +254,7 @@
 }
 
 .div2 {
-  width: 80%;
+  width: 60%;
   height: 1000px;
   border: 1px solid blue;
   margin: 0 auto;

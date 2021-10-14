@@ -1,258 +1,265 @@
-
 .activity-1 {
-    width: 100%;
+  width: 100%;
 }
 
-#carouselExampleIndicators{
-    width:70%; 
-    /* height: auto; */
-    /* border:1px solid red; */
-    margin: 0 auto;
-    overflow: hidden;
+#carouselExampleIndicators {
+  width: 70%;
+  /* height: auto; */
+  /* border:1px solid red; */
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .breadcrumb {
-    position: relative;
-    left: 40%;
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+  position: relative;
+  left: 0%;
+  border: 1px solid black;
 }
 
 #activityname {
-    position: relative;
-    left: 34%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 1px solid black;
+  text-align: center;
 }
 
-.bi-star-fill{
-    position: relative;
-    left: 1%;
-    color : gold;
+.bi-star-fill {
+  position: relative;
+  left: 1%;
+  color: gold;
 }
 
 .starscore {
-    position: relative;
-    left: 22%;
-    float: left;
-    margin-top: 1%;
+  position: relative;
+  left: 22%;
+  float: left;
+  margin-top: 1%;
 }
 
 #reviewnum {
-    position: relative;
-    left: 25%;
-    float: left;
-    color : green;
-    margin-top: 1%;
+  position: relative;
+  left: 25%;
+  float: left;
+  color: green;
+  margin-top: 1%;
 }
 
 .activity-2 {
-    width: 100%;
+  width: 100%;
 }
 
 .bi-currency-dollar {
-    position: relative;
-    left: 23%;
-    color: gold;
-    float: left;
+  position: relative;
+  left: 23%;
+  color: gold;
+  float: left;
 }
 
 #condition1 {
-    position: relative;
-    left: 25%;
-    float: left;
+  position: relative;
+  left: 25%;
+  float: left;
 }
 
 .bi-calendar-check {
-    position: relative;
-    left: 45%;
-    float: left;
-    color:firebrick
+  position: relative;
+  left: 45%;
+  float: left;
+  color: firebrick;
 }
 
 #condition2 {
-    position: relative;
-    left: 48%;
-    float: left;
+  position: relative;
+  left: 48%;
+  float: left;
 }
 
 .bi-people-fill {
-    position: relative;
-    left: 23%;
-    float: left;
+  position: relative;
+  left: 23%;
+  float: left;
 }
 
 #condition3 {
-    position: relative;
-    left: 25%;;
-    float: left;
+  position: relative;
+  left: 25%;
+  float: left;
 }
 
 .bi-clock {
-    position: relative;
-    left: 50%;
-    float: left;
+  position: relative;
+  left: 50%;
+  float: left;
 }
 
 #condition4 {
-    position: relative;
-    left: 53%;
-    float: left;
+  position: relative;
+  left: 53%;
+  float: left;
 }
 
 .activity-3 {
-    width: 100%;
+  width: 100%;
 }
 
 .explan {
-    position: relative;
-    left: 20%;
+  position: relative;
+  border: 2px solid red;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .option {
-    width: 100%;
+  position: relative;
+  border: 2px solid red;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #option {
-    position: relative;
-    left: 20%;
+  position: relative;
+  text-align: left;
 }
 
 .option1 {
-    position: relative;
-    left: 20%;
-    background-color: mintcream;
-    width:800px; 
-    height: 630px;
+  position: relative;
+  left: 00%;
+  background-color: mintcream;
+  width: 100%;
+  height: 630px;
 }
 
 #date {
-    position: relative;
-    left: 60%;
+  position: relative;
+  left: 00%;
 }
 
 .calender {
-    position: relative;
-    left: 64%;
+  position: relative;
+  left: 64%;
 }
 
 #select {
-    position: relative;
-    left: 20%;
+  position: relative;
+  left: 0%;
 }
 
-.btn-group-vertical{
-    width: 250px;
+.btn-group-vertical {
+  width: 250px;
 }
 
 .btn-check-option {
-    position: relative;
-    left: 33%;
-    background-color: green;
-    color: white;
-    border: white;
+  position: relative;
+  left: 33%;
+  background-color: green;
+  color: white;
+  border: white;
 }
 
 #person {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
 
 .person-bar {
-    position: relative;
-    left: 5%;
-    width: 20%;
+  position: relative;
+  left: 5%;
+  width: 20%;
 }
 
 #price {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
 
 #confirm {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
 
 .btn-pay-select1 {
-    position: relative;
-    left: 80%;
-    width: 200px;
-    background-color: green;
-    color: white;
-    border: white;
+  position: relative;
+  left: 80%;
+  width: 200px;
+  background-color: green;
+  color: white;
+  border: white;
 }
 
 .btn-pay-select2 {
-    position: relative;
-    left: 90%;
-    width: 200px;
-    background-color: green;
-    color: white;
-    border: white;
+  position: relative;
+  left: 90%;
+  width: 200px;
+  background-color: green;
+  color: white;
+  border: white;
 }
 
 #location {
-    position: relative;
-    left: 20%;
+  position: relative;
+  left: 00%;
 }
 
 .map {
-    position: relative;
-    left: 20%;
-    width: 60%; 
+  position: relative;
+  left: 20%;
+  width: 60%;
 }
 
 #reveiw {
-    position: relative;
-    left: 20%;
+  position: relative;
+  left: 0%;
 }
 
 #starscore2 {
-    position: relative;
-    left: 20%;
-    float: left;
-    margin-top: 1%;
+  position: relative;
+  left: 20%;
+  float: left;
+  margin-top: 1%;
 }
 
 .stars {
-    position: relative;
-    left: 25%;
-    float: left;
-    color: gold;
+  position: relative;
+  left: 25%;
+  float: left;
+  color: gold;
 }
 
 #review-all {
-    position: relative;
-    left: 45%;
-    float: left;
-    color: green;
-    margin-top: 1%;
+  position: relative;
+  left: 45%;
+  float: left;
+  color: green;
+  margin-top: 1%;
 }
 
 #sort {
-    position: relative;
-    left: 65%;
+  position: relative;
+  left: 0%;
 }
 
 #sort-select {
-    width: 150px;
+  width: 150px;
 }
 
 .bi-person-fill {
-    position: relative;
-    left: 20%;
-    float: left;
+  position: relative;
+  left: 20%;
+  float: left;
 }
 
 #nickname {
-    position: relative;
-    left: 21%;
+  position: relative;
+  left: 0%;
 }
 
 .stars-user {
-    position: relative;
-    float: left;
+  position: relative;
+  float: left;
 }
 
 #review-auto {
-   
 }
