@@ -14,13 +14,20 @@
     padding-bottom: 30px;
     padding-top: 80px; */
 }
+.page-text h2 {
+    position: relative;
+    left: 26%;
+}
 .body-all {
     position: relative;
-    left: 15%;
+    left: 0%;
+    background: rgba(249, 249, 249, 1);
 }
 .side-all {
+    position: relative;
+    left: 25%;
     float: left;
-    width: 18%;
+    width: 25%;
 
 }
 .side-1 {
@@ -33,9 +40,14 @@
 .side-1 > img {
     padding-left: 100px;
 }
+.side-1 h4 {
+    position: relative;
+    left: 108px;
+}
 .side-2 {
     margin: 10px;
     margin-top: 50px;
+    margin-bottom: 100px;
     width: 300px;
     height: 600px;
 
@@ -44,7 +56,7 @@
 }
 #quit {
     position: relative;
-    left: 100px;
+    left: 105px;
 }
 .menu {
     margin: 80px;
@@ -54,8 +66,10 @@
     position: relative;
 }
 .center-all{
+    position: relative;
+    left: 20%;
     float: right;
-    width: 70%;
+    width: 75%;
 
 }
 .center-1 {
@@ -64,13 +78,140 @@
     border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
     margin-bottom: 20px;
 }
+.center-1 textarea {
+    width: 595px;
+    height: 100px;
+    border-style: hidden;
+}
+.center-1 button {
+    position: relative;
+    left: 85%;
+    top: 5%;
+}
 .center-2 {
     width: 600px;
-    height: 400px;
+    height: 420px;
     border-style: solid; box-shadow: 2px 2px 3px 2px gray;
+}
+.center-2 textarea {
+    width: 595px;
+    height: 200px;
+    border-style: hidden;
 }
 #text1 {
     width: 595px;
     height: 300px;
     border-style: hidden;
+}
+.center-2 button {
+    background: url( "../../resources/image/mypage/wraning.png" ) no-repeat;
+    background-position: center;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 73%;
+    top: 6%;
+}
+.center-2 h5 {
+    display: inline-block
+}
+
+/* ----------------회원탈퇴------------------ */
+.q-side-all {
+    position: relative;
+    left: 25%;
+    float: left;
+    width: 25%;
+}
+.q-center-all{
+    position: relative;
+    left: 20%;
+    float: right;
+    width: 75%;
+
+}
+.q-center-1 {
+    width: 600px;
+    height: 500px;
+    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
+    margin-bottom: 20px;
+}
+.q-text {
+    position: relative;
+    left: 20px;
+    width: 550px;
+}
+.q-check {
+    margin: 0px auto;
+    display: table;
+
+}
+.q-center-all button {
+    margin: 0px auto;
+    display: table;
+}
+/* ----------확인탈퇴2------------ */
+.q-text2 {
+    margin: 0px auto;
+    display: table;
+    text-align: center;
+}
+
+/* -----------여행내역------------- */
+.a-center-all{
+    position: relative;
+    left: 20%;
+    float: right;
+    width: 75%;
+
+}
+.a-center-1 {
+    width: 600px;
+    height: 940px;
+    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
+    margin-bottom: 20px;
+}
+.a-buttons #one{
+    margin-bottom: 10px; 
+    margin-right: 20px;
+}
+#move{
+    float: right;
+    margin-right: 10px;
+    /* border: none; */
+    background: none;
+}
+#delete {
+    position: relative;
+    left: 550px;
+    margin-right: 10px;
+}
+.a-center-text h5{
+    margin-bottom : 0px;
+}
+#pay {
+    position: relative;
+    left: 520px;
+}
+.payment {
+    display: inline-block;
+}
+/* .a-center-text {
+    margin-left: 20px;
+} */
+
+/* -----------메이트 후기 작성------------- */
+.m-center-all{
+    position: relative;
+    left: 20%;
+    float: right;
+    width: 75%;
+}
+.m-center-1{
+    width: 600px;
+    height: 940px;
+    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
+    margin-bottom: 20px;
 }
