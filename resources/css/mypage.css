@@ -1,217 +1,354 @@
 .logo {
-    height: 400px;
-    padding-top: 100px;
-    background: rgba(249, 249, 249, 1);
+  height: 400px;
+  padding-top: 100px;
+  background: rgba(249, 249, 249, 1);
 }
 .logo > img {
-
-    position: relative;
-    padding:0;
-    top:10%;
-    left : 40%
-    /* padding-left: 400px;
+  position: relative;
+  padding: 0;
+  top: 10%;
+  left: 40%;
+  /* padding-left: 400px;
     padding-right: 400px;
     padding-bottom: 30px;
     padding-top: 80px; */
 }
+.page-text {
+  position: relative;
+  width: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid blue;
+}
 .page-text h2 {
-    position: relative;
-    left: 26%;
 }
 .body-all {
-    position: relative;
-    left: 0%;
-    background: rgba(249, 249, 249, 1);
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  left: 0%;
+  background: rgba(249, 249, 249, 1);
+  border: 2px solid blue;
+  float: left;
 }
-.side-all {
-    position: relative;
-    left: 25%;
-    float: left;
-    width: 25%;
 
+.body-all div {
+  position: relative;
+  width: 45%;
+  float: left;
+}
+
+.side-all {
+  position: relative;
+  left: 10%;
+  float: left;
+  width: 25%;
+  border: 1px solid lime;
 }
 .side-1 {
-    width: 300px;
-    height: 300px;
-    margin-left: 10px;
+  width: 100%;
+  height: 300px;
+  /* margin-left: 10px; */
 
-    border-style: solid; box-shadow: 2px 2px 3px 2px gray;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
 }
 .side-1 > img {
-    padding-left: 100px;
+<<<<<<< HEAD
+  padding-left: 100px;
+}
+.side-1 h4 {
+  position: relative;
+  left: 10%;
+=======
+    position: relative;
+    left: 30%;
 }
 .side-1 h4 {
     position: relative;
-    left: 108px;
+    left: 104px;
+>>>>>>> dd6a5ddd64dd87bea617a26982759f1d67b3c482
 }
 .side-2 {
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 300px;
-    height: 600px;
+  /* margin: 10px; */
+  margin-top: 50px;
+  /* margin-bottom: 100px; */
+  width: 100%;
+  height: 600px;
 
-
-    border-style: solid; box-shadow: 2px 2px 3px 2px gray;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
 }
 #quit {
-    position: relative;
-    left: 105px;
+  position: relative;
+  left: 10px;
 }
 .menu {
-    margin: 80px;
+  margin: 80px;
 }
 .container {
-    background: rgba(249, 249, 249, 1); 
-    position: relative;
+  background: rgba(249, 249, 249, 1);
+  position: relative;
 }
-.center-all{
-    position: relative;
-    left: 20%;
-    float: right;
-    width: 75%;
-
+.center-all {
+  position: relative;
+  left: 20%;
+  float: left;
+  width: 30%;
+  border: 1px solid purple;
 }
 .center-1 {
-    width: 600px;
-    height: 500px;
-    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
+  margin-bottom: 20px;
 }
 .center-1 textarea {
-    width: 595px;
-    height: 100px;
-    border-style: hidden;
+  width: 100%;
+  height: 100px;
+  border-style: hidden;
 }
 .center-1 button {
-    position: relative;
-    left: 85%;
-    top: 5%;
+  position: relative;
+  left: 70%;
+  top: 5%;
 }
 .center-2 {
-    width: 600px;
-    height: 420px;
-    border-style: solid; box-shadow: 2px 2px 3px 2px gray;
+  width: 100%;
+  height: 420px;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
 }
 .center-2 textarea {
-    width: 595px;
-    height: 200px;
-    border-style: hidden;
+  width: 100%;
+  height: 200px;
+  border-style: hidden;
 }
 #text1 {
-    width: 595px;
-    height: 300px;
-    border-style: hidden;
+  width: 100%;
+  height: 300px;
+  border-style: hidden;
 }
 .center-2 button {
-    background: url( "../../resources/image/mypage/wraning.png" ) no-repeat;
-    background-position: center;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: relative;
-    left: 73%;
-    top: 6%;
+  background: url("../../resources/image/mypage/wraning.png") no-repeat;
+  background-position: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  top: 6%;
 }
 .center-2 h5 {
-    display: inline-block
+  display: inline-block;
 }
 
 /* ----------------회원탈퇴------------------ */
 .q-side-all {
-    position: relative;
-    left: 25%;
-    float: left;
-    width: 25%;
+  position: relative;
+  left: 25%;
+  float: left;
+  width: 25%;
 }
-.q-center-all{
-    position: relative;
-    left: 20%;
-    float: right;
-    width: 75%;
-
+.q-center-all {
+  position: relative;
+  left: 20%;
+  float: right;
+  width: 75%;
 }
 .q-center-1 {
-    width: 600px;
-    height: 500px;
-    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
-    margin-bottom: 20px;
+  width: 600px;
+  height: 500px;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
+  margin-bottom: 20px;
 }
 .q-text {
-    position: relative;
-    left: 20px;
-    width: 550px;
+  position: relative;
+  left: 20px;
+  width: 550px;
 }
 .q-check {
-    margin: 0px auto;
-    display: table;
-
+  margin: 0px auto;
+  display: table;
 }
 .q-center-all button {
-    margin: 0px auto;
-    display: table;
+  margin: 0px auto;
+  display: table;
 }
 /* ----------확인탈퇴2------------ */
 .q-text2 {
-    margin: 0px auto;
-    display: table;
-    text-align: center;
+  margin: 0px auto;
+  display: table;
+  text-align: center;
 }
 
 /* -----------여행내역------------- */
-.a-center-all{
-    position: relative;
-    left: 20%;
-    float: right;
-    width: 75%;
-
+.a-center-all {
+  position: relative;
+  left: 20%;
+  float: right;
+  width: 75%;
 }
 .a-center-1 {
-    width: 600px;
-    height: 940px;
-    border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
-    margin-bottom: 20px;
+  width: 600px;
+  height: 940px;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
+  margin-bottom: 20px;
 }
-.a-buttons #one{
-    margin-bottom: 10px; 
-    margin-right: 20px;
+.a-buttons #one {
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
-#move{
-    float: right;
-    margin-right: 10px;
-    /* border: none; */
-    background: none;
+#move {
+  float: right;
+  margin-right: 10px;
+  /* border: none; */
+  background: none;
 }
 #delete {
-    position: relative;
-    left: 550px;
-    margin-right: 10px;
+  position: relative;
+  left: 550px;
+  margin-right: 10px;
 }
-.a-center-text h5{
-    margin-bottom : 0px;
+.a-center-text h5 {
+  margin-bottom: 0px;
 }
 #pay {
-    position: relative;
-    left: 520px;
+  position: relative;
+  left: 520px;
 }
 .payment {
-    display: inline-block;
+  display: inline-block;
 }
 /* .a-center-text {
     margin-left: 20px;
 } */
 
 /* -----------메이트 후기 작성------------- */
-.m-center-all{
+.m-center-all {
+  position: relative;
+  left: 20%;
+  float: right;
+  width: 75%;
+}
+.m-center-1 {
+  width: 600px;
+  height: 940px;
+  border-style: solid;
+  box-shadow: 2px 2px 3px 2px gray;
+  margin-bottom: 20px;
+}
+
+/*------------------------------------*/
+.div1 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.div2 {
+  width: 80%;
+  height: 1000px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.div3 {
+  position: relative;
+
+  width: 30%;
+  height: 1000px;
+  border: 1px solid purple;
+  float: left;
+}
+
+.div4 {
+  position: relative;
+  width: 60%;
+  height: 1000px;
+  border: 1px solid pink;
+  float: right;
+}
+
+.div5 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid lime;
+}
+.div6 {
+  width: 100%;
+  height: 700px;
+  border: 1px solid lime;
+}
+.one-line h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.one-line {
+    display: flex;
+}
+.one-line button {
+    position: relative;
+    left: 245px;
+}
+#complete{
+    float: right;
+    margin-right: 10px;
+}
+.r-center-all{
     position: relative;
     left: 20%;
     float: right;
     width: 75%;
 }
-.m-center-1{
+.r-center-1{
     width: 600px;
     height: 940px;
     border-style: solid ; box-shadow: 2px 2px 3px 2px gray;
     margin-bottom: 20px;
 }
+.r-center-1 h3> {
+    padding-left: 10px;
+
+}
+.r-center-1 h6 {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.r-center-1 h2,h3,h4,h5,h6,textarea{
+    margin-left: 10px;
+
+}
+textarea {
+    width: 550px;
+    height: 200px;  
+    border: none; 
+}
+.r-center-1 button{
+    margin: 0px auto;
+    display: table;
+    
+    width: 140px;
+    height: 40px;
+
+    color: white;
+    background: rgba(0, 166, 81, 1);
+
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+}
+
+.r-center-1 button:active {
+    box-shadow: none;
+}
+
+
+
