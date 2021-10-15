@@ -1,0 +1,163 @@
+.around {
+    height:auto;
+    weight:100%;
+    border: 3px solid springgreen;
+}
+
+.mate_logo img{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.mate_ad {
+    width: 60%;
+ /* 이미지 가운데 정렬해주는 속성 */
+    display: block;
+    margin: 0px auto; 
+ }
+ 
+ .mate_ad img{
+     width: 100%;
+     margin-top: 70px;
+ }
+ 
+ .mate_review1 {
+     position: relative;
+     display: block;
+     width: 60%;
+     height: 40px;
+     margin: 50px 20% 20px 20%;
+ }
+ 
+ .mate_review1 img {
+     position: relative;
+     width: 24%;
+     height: auto;
+     margin-left: -2.5%;
+ }
+ 
+ .mate_review2 {
+     position: relative;
+     width: 64.3%;
+     height: 125px;
+     margin: 0px auto 5px 20%;
+ }
+ 
+ .mate_review2 img {
+     float: left; 
+     width: calc(85%/5);
+     margin-right: 2%;
+     /* border-radius: 5%; */
+ }
+ 
+ .mate_review3{
+     position: relative;
+     width: 61%;
+     margin: 0px 0px 65px 20%;
+     display: flex;
+ }
+ 
+ .mate_review3 div{
+     background-color: gainsboro;
+     position: relative;
+     width: calc(100%/5);
+     height: 15px;
+     margin-right: 2%;
+     padding: 9px;
+     text-align: center;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+ }
+
+ .mate_review4 {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 30px;
+    margin: 0px 20% 10px 20%;
+}
+
+.mate_review4 img {
+    position: relative;
+    width: 17.8%;
+    height: auto;
+    margin-left: -2.5%;
+}
+
+.review_border {
+    border: 1px solid gainsboro;
+    height: 900px;
+    width: 60%;
+    margin: 30px 20% 3% 20%;
+
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+.mate_review5 {
+    height: calc(84%/3);
+    width: 90%;
+    position: relative;
+    margin: 4% 0 0 6.6% ;
+}
+
+.mate_review6 {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 70%;
+}
+
+.mate_review6 img {
+    position: relative;
+    width: calc(92%/3);
+    height: 100%;
+    margin-right: 2%;
+}
+
+.mate_review7{
+    position: relative;
+    width: 29%;
+    height: 8%;
+    margin: 1% 4% 0 0;
+
+    float: left;
+}
+
+.com {
+    width: 10%;
+    height: 100%;
+    margin-right: 10%;
+    color: red;
+    float: right;
+}
+
+.mate_review8{
+    position: relative;
+    font-size: 13px;
+    width: 29%;
+    height: 5%;
+    margin: 0.5% 4% 0 0;
+
+    float: left;
+}
+
+.mate_review9{
+    position: relative;
+    font-size: 13px;
+    width: 29%;
+    height: 5%;
+    margin: 0.5% 4% 0 0;
+
+    float: left;
+}
+
+.searchtext {
+    margin-left: 30%;
+    margin-bottom: 1%;
+    width:30%;
+    height: 25px;
+  }
+  
+  .searchbutton{
+    width: 8%;
+    height: 32px;
+  }
