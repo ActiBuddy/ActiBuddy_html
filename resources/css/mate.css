@@ -15,14 +15,271 @@
     margin-top: 70px;
 }
 
-.mate_review {
-    width: 82%;
-    height: 230px;
-    margin-top: 70px;
-    background-color: pink;
+.mate_review1 {
+    position: relative;
+    
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-.mate_review img {
-    width: 250px;
-    height: 60px;
+.mate_review1 img {
+    position: relative;
+    left: 8%;
+    width: 13.7%;
+    height: auto;
 }
+
+.mate_review2 {
+    position: relative;
+    width: 85.5%;
+    height: 125px;
+    margin: 0px 0% 50px 10%;
+}
+
+.mate_review2 img {
+    float: left; 
+    width: calc(85%/5);
+    margin-right: 2%;
+}
+
+.mate_review3{
+
+    position: relative;
+    width: 81.2%;
+    margin-left: 10%;
+    margin-right: 8.8%;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.mate_review3 div{
+    background-color: #D6E8B8;
+    position: relative;
+    width: calc(100%/5);
+    height: 15px;
+    margin-right: 2%;
+    padding: 9px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.mate_hurry1 {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.mate_hurry1 img {
+    position: relative;
+    left: 8%;
+    width: 17%;
+    height: auto;
+}
+
+.mate_hurry2 {
+    position:relative;
+    width: 85%;
+    height: 300px;
+    margin: 20px 12% 20px 8%;
+    display: flex;
+}
+
+.mate_hurry2 div{
+    /* background-color: limegreen; */
+    width: calc(100%/3);
+    height: 300px
+    margin: 0px 0% 0px 0%;
+    text-align: center;
+}
+
+.mate_hurry2 img {
+    width: 352px;
+    height: 322px;
+}
+
+/* 
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  /* box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); */
+} */
+
+.mate_find1 {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+
+.mate_find1 img {
+    position: relative;
+    left: 8%;
+    width: 13.9%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.mate_tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto 12% auto;
+}
+
+  
+  /* 탭 스타일 */
+  .mtab_item {
+    width: calc(100%/8);
+    height: 50px;
+    border-bottom: 3px solid #7DB249;
+    background-color: #f8f8f8;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+
+  .mtab_item:hover {
+    opacity: 0.75;
+  }
+
+ /* 선택된 탭 스타일 */
+ .mate_tabs input:checked + .mtab_item {
+    background-color: #7DB249;
+    color: #fff;
+  }
+
+   /* 라디오 버튼 UI삭제*/
+   input[name="mtab_item"] {
+    display: none;
+  }
+  
+  input[name="slide"] {
+    display: none;
+  }
+
+  /* 탭 컨텐츠 스타일 */
+  .mtab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
+
+
+.post{
+    width: 90%;
+    height: 40px;
+    /* margin: 50px auto 0px; */
+    margin-bottom: 50px;
+    background-color: beige;
+    font-size: 25px;
+    /* padding: 8px 10px 0px 40px; */
+    left: 5%;
+    transition: all 0s ease;
+
+}
+
+  table {
+  /* width: 100%; */
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 10px;
+  }
+  table thead th {
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    background: gainsboro;
+    margin: 20px 10px;
+    text-align: center;
+  }
+  table tbody th {
+    /* height: 50px; */
+    /* width: 100px; */
+    padding: 10px;
+    text-align: center;
+  }
+  table td {
+    /* height: 50px; */
+    width: 50px;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+/* .post div{
+    position: relative;
+    width: calc(100%/5);
+    height: 40px;
+    margin: 60px auto 0px;
+    background-color: pink;
+    font-size: 25px;
+    text-align: center;
+    padding: 8px 10px 0px 40px;
+    left: 5%;
+    display: flex;
+} */
+  
+  /* 선택 된 탭 콘텐츠를 표시 */
+  #all:checked ~ #all_content,
+  #gyeonggi:checked ~ #gyeonggi_content,
+  #gangwon:checked ~ #gangwon_content,
+  #chungcheong:checked ~ #chungcheong_content,
+  #jeolla:checked ~ #jeolla_content,
+  #gyeongsang:checked ~ #gyeongsang_content,
+  #busan:checked ~ #busan_content,
+  #jeju:checked ~ #jeju_content {
+    display: block;
+  }
+
+  .write{
+    position:relative;
+    width: 120px;
+    height: 40px;
+    margin: 0 10% 50px 80%;
+    background-color: pink;
+  }
+
+  .write button{
+    height: 40px;
+    width: 120px;
+    background-color: olivedrab;
+  }
+
+
+
+  .searchtext {
+    margin-left: 25%;
+    margin-bottom: 1%;
+    width:30%;
+    height: 25px;
+  }
+  
+  .searchbutton{
+    width: 8%;
+    height: 32px;
+  }

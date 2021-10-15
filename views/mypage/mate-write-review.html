@@ -15,17 +15,17 @@
 
     <nav class="navbar">
         <ul class="navbar_menu">
-            <a href="main.html"><img src="../../resources/image/actibuddylogo.png" class="nav_logo"></a>
-            <li class="dropbox"><a href="#">액티비티</a></li>
-            <li class="dropbox"><a href="#">메이팅</a></li>
+            <a href="../main/main.html"><img src="../../resources/image/actibuddylogo.png" class="nav_logo"></a>
+            <li class="dropbox"><a href="../activity/activity.html">액티비티</a></li>
+            <li class="dropbox"><a href="../Mate/matemain.html">메이팅</a></li>
             <li><input type="text" placeholder="Search"></li>
-            <li><button type="submit">Submit</button></li>
+            <li><button type="button" onclick="location.href='../activity/searchActivity.html'">Submit</button></li>
         </ul>
 
         <ul class="navbar_link">
             <li><a href="../FAQ/FAQ_main.html">FAQ</a></li>
-            <li><a href="">회원가입</a></li>
-            <li><button type="button" class="login_btn" onclick="location.href='main.html'">로그인</button></li>
+            <li><a href="../singup/signup.html">회원가입</a></li>
+            <li><button type="button" class="login_btn" onclick="location.href='../login/login.html'">로그인</button></li>
         </ul>
     </nav>
 
@@ -67,24 +67,45 @@
                     <a href="../mypage/tripList.html">여행 내역</a><br><br><br>
                     <a href="../mypage/review.html">이용 후기</a><br><br><br>
                     <a href="../mypage/cart.html">장바구니</a><br><br><br>
-                    <a href="">메이트 내역</a><br><br><br> 
+                    <a href="../mypage/mate-list.html">메이트 내역</a><br><br><br> 
                     <a href="">문의 사항</a><br><br>
                 </div>
             </div> 
         </div>
         
 
-        <div class="m-center-all">
+        <div class="r-center-all">
 
-            <div class="m-center-1">
-                
-                <div class="m-center-text">
+            <div class="r-center-1">
+                <h3>메이트 후기 작성  </h3>
+                <hr>
+                <h4>제목 : </h4>
+                <h5>참가한 메이팅 : </h5>
+                <br><br>
+                <h5> 평가할 메이트 : </h5>
+                <hr>
+                <h4>별점을 매겨수세요 ☆☆☆☆☆</h4>
+                <hr>
+                <h6>후기 내용</h6>
+                <hr><br>
+                <input type="checkbox" id="b">
+                    <label for="b">저와 딱 맞는 메이트였어요!</label><br>
+                <input type="checkbox" id="c">
+                    <label for="c">다음에도 같이 여행하고 싶어요.</label><br>
+                <input type="checkbox" id="d">
+                    <label for="d">메이트와 좋은 친구가 되었어요.</label><br>
+                <input type="checkbox" id="e">
+                    <label for="e">함께했던 여행이 아쉬웠어요.</label><br>
+                <input type="checkbox" id="f">
+                    <label for="f">아쉽지만 잘 맞지 않은 메이트였어요.</label><br>
+                <br><hr>
 
-                    
-                    
+                <h6>기타</h6>
+                <hr>
 
+                <textarea placeholder="기타 평가를 작성해주세요"></textarea><br><br><br><br><br>
 
-                </div>
+                <button type="submit">후기 작성하기</button>
 
             </div>
            
