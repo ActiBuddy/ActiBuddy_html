@@ -197,3 +197,13 @@ margin-left: 10px;
     margin-bottom: 70px;
     float: right;
 }
+
+.topDiv{
+   display: table;
+}
+
+#div1{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 18px;
+}
