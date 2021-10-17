@@ -1,5 +1,4 @@
 .tabs {
-<<<<<<< HEAD
     margin-top: 50px;
     padding-bottom: 40px;
     background-color: white;
@@ -139,14 +138,6 @@ faq_main{
     top: 15%;
     /* left: 50%; */
     float: right;
-=======
-  margin-top: 50px;
-  padding-bottom: 40px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 60%;
-  margin: 0 auto 100px auto;
->>>>>>> 13fbb02eddb0d1f473a982f1ecffd568dcd7e2cc
 }
 
 /* 탭 스타일 */

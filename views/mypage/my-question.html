@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <title>mate-write-review</title>
+    <title>my-questions</title>
     <link rel="stylesheet" href="../../resources/css/actibuddy.css">
     <link rel="stylesheet" href="../../resources/css/mypage.css">
 
 </head>
 
 <body>
+
 
     <nav class="navbar">
         <ul class="navbar_menu">
@@ -30,7 +32,6 @@
     </nav>
 
 
-
     <div class="logo" >
     
         <img src="../../resources/image/mypage/mainlogo.png" width="400px" height="350px" />
@@ -43,8 +44,9 @@
         <h2>해씨초코볼  님의 마이페이지</h2>
     </div>
 
-    <div class="body-all" id="background">
-
+    <div class="body-all">
+    
+        
         <div class="side-all">
             
     
@@ -70,62 +72,81 @@
                     <a href="../mypage/mate-list.html">메이트 내역</a><br><br><br> 
                     <a href="../mypage/my-question.html">문의 사항</a><br><br>
                 </div>
-            </div> 
+            </div>
+
+            
         </div>
         
+        <div class="a-center-all">
 
-        <div class="r-center-all">
+        
+            <div class="a-center-1">
+                
+                <div class="c-center-text">
 
-            <div class="r-center-1">
-                <h3>메이트 후기 작성  </h3>
-                <hr>
-                <h4>제목 : </h4>
-                <h5>참가한 메이팅 : </h5>
-                <br><br>
-                <h5> 평가할 메이트 : </h5>
-                <hr>
-                <h4>별점을 매겨수세요 ☆☆☆☆☆</h4>
-                <hr>
-                <h6>후기 내용</h6>
-                <hr><br>
-                <input type="checkbox" id="b">
-                    <label for="b">저와 딱 맞는 메이트였어요!</label><br>
-                <input type="checkbox" id="c">
-                    <label for="c">다음에도 같이 여행하고 싶어요.</label><br>
-                <input type="checkbox" id="d">
-                    <label for="d">메이트와 좋은 친구가 되었어요.</label><br>
-                <input type="checkbox" id="e">
-                    <label for="e">함께했던 여행이 아쉬웠어요.</label><br>
-                <input type="checkbox" id="f">
-                    <label for="f">아쉽지만 잘 맞지 않은 메이트였어요.</label><br>
-                <br><hr>
+                    <h3>나의 문의사항</h3>
+                    <hr>
 
-                <h6>기타</h6>
-                <hr>
+                    <h3>제목 : </h3>
+                    <button id="move" type="button" onclick="location.href=''">상세보기 ></button>
+                    <br> <br> <br>
+                    <h4>문의 처리 상황 : </h4><br>
 
-                <textarea placeholder="기타 평가를 작성해주세요"></textarea>
-                <br><br><br>
+                    <button id="l-list">답변 보기</button>
+                    <div class="answer">
+                        <br>
+                        <p>
+                            문의하신 문의의 답변입니다.
+                        </p>
 
-                <button type="submit">후기 작성하기</button>
+                    </div>
+                    <script>
+                        $(function(){
+                            $('.answer').slideUp()
+                
+                            $('#l-list').click(function(){
+                                $(this).next('div').slideToggle();
+                            });
+                        });
+                    </script>
 
+                    <hr>
+
+                    <!-- <h3>제목 : </h3>
+                    <button id="move" type="button" onclick="location.href=''">상세보기 ></button>
+                    <br> <br> <br>
+                    <h4>문의 처리 상황 : </h4><br>
+
+                    <button id="l-list">답변 보기</button>
+                    <div class="answer">
+                        <br>
+                        <p>
+                            문의하신 문의의 답변입니다.
+                        </p>
+
+                    </div>
+                    <script>
+                        $(function(){
+                            $('.answer').slideUp()
+                
+                            $('#l-list').click(function(){
+                                $(this).next('div').slideToggle();
+                            });
+                        });
+                    </script> -->
+
+                    
+
+
+                </div>
+
+
+    
             </div>
            
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
