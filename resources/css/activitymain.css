@@ -27,10 +27,37 @@
     background-color: rgba(0, 166, 81, 1);
   }
 
+.menu1{
+  height: 500px;
+  background-image: url(../image/Rectangle\ 803.png);
+  background-size: contain;
+}
+
+.menu2{
+  height: 500px;
+  background-image: url(../image/Rectangle\ 803.png);
+  background-size: contain;
+}
+
+.menu3{
+  height: 500px;
+  background-image: url(../image/Rectangle\ 803.png);
+  background-size: contain;
+}
+
+.menu4{
+  height: 500px;
+  background-image: url(../image/Rectangle\ 803.png);
+  background-size: contain;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 .img{
+  
   width: 300px;
   height: 300px;
   padding-left: 30px ;
+  margin-top: 50px;
 }
 
 #body{
