@@ -155,7 +155,15 @@
     width: 250px;
 }
 
-.btn-check-option {
+.btn-radio-option1 {
+    position: relative;
+    left: 50%;
+    background-color: green;
+    color: white;
+    border: white;
+}
+
+.btn-radio-option2 {
     position: relative;
     left: 50%;
     background-color: green;
@@ -353,70 +361,6 @@
     left: 10%;
     width: 50%;
 }
-/* 
-.bi-person-fill2 {
-    position: relative;
-    left: 20%;
-    float: left;
-}
-
-#nickname2 {
-    position: relative;
-    width: 17%;
-    left: 21%;
-}
-
-.stars-user2 {
-    position: relative;   
-    width: 80%;
-    margin: 0 auto;
-}
-
-.bi-star-user2 {
-    position: relative;
-    left: 15%;
-}
-
-#review-auto2 {
-    position: relative;
-    left: 32%;
-    float: left;
-    color: grey;
-    margin-top: 1px;
-}
-
-#goods-detail2 {
-    color: grey; 
-    position: relative; 
-
-    left: 22%;
-    float: left;
-}
-
-#review-date2 {
-    position: relative;
-    width: 20%;
-    float: left;
-    left: 60%;
-    color: gray; 
-}
-
-.review-detail2 {
-    position: relative;
-    left: 10%;
-    width: 50%;
-}
-
-#review-p2 {
-    position: relative;
-    left: 8%;
-}
-
-.review-img2 {
-    width: 40%;
-    position: relative;
-    left: 8%;
-} */
 
 #suggestion {
     position: relative;
