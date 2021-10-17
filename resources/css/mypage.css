@@ -1,7 +1,7 @@
 .logo {
   height: 400px;
   padding-top: 100px;
-  background: rgba(249, 249, 249, 1);
+  background: rgba(240, 240, 240, 1);
 }
 .logo > img {
   position: relative;
@@ -250,12 +250,14 @@
 .a-center-all button:active {
   box-shadow: none;
 }
+
 #complete{
   float: right;
   margin-right: 10px;
   color: darkgray;
   border: none;
 }
+
 
 
 /* -----------메이트 후기 작성------------- */
