@@ -1,3 +1,7 @@
+a {
+  font-size: 18px;
+}
+
 .mate_logo img{
     width: 100%;
     margin-top: 70px;
@@ -204,7 +208,7 @@
   
   /* 탭 스타일 */
   .mtab_item {
-    width: calc(100%/8);
+    width: calc(100%/9);
     height: 50px;
     border-bottom: 3px solid #7DB249;
     background-color: #f8f8f8;
@@ -308,6 +312,7 @@
   
   /* 선택 된 탭 콘텐츠를 표시 */
   #all:checked ~ #all_content,
+  #seoul:checked ~ #seoul_content,
   #gyeonggi:checked ~ #gyeonggi_content,
   #gangwon:checked ~ #gangwon_content,
   #chungcheong:checked ~ #chungcheong_content,
@@ -359,7 +364,7 @@
    position: relative;
    float: right;
     height: 95%;
-    width: 13%;
+    width: 16%;
     margin-top: -6.7%;
     background-color: olivedrab;
     /* border-color: rgb(207, 228, 204); */
