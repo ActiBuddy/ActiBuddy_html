@@ -1151,6 +1151,7 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  /* border: 1px solid red; */
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -2421,6 +2422,7 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 .table-responsive {
+  margin-left: 20%;
   min-height: .01%;
   overflow-x: auto;
 }
@@ -6567,3 +6569,22 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.img {
+  width: 5%;
+  border: 1px solid red;
+}
+
+.pagination {
+  position: relative;
+  left: 30%;
+}
+
+.sub-header {
+  position: relative;
+  text-align: center;
+}
+
+.btn-default {
+  background-color: white;
+}
