@@ -31,20 +31,8 @@
     <link rel="stylesheet" href="../../resources/css/activity-style.css">
     <link rel="stylesheet" href="../../resources/css/FAQ.css">
     <script src="../../resources/js/activity.js"></script>
-    <script>
-    // 임시로 지정해둔 스크립트
-      $(function(){
-        $('#check1').click(function(){
-            location.href="https://www.naver.com";
-        });
-      });
-      $(function(){
-        $('#btn').click(function(){
-          location.href="https://www.google.com";
-        });
-      });
-    </script>
   </head>
+  <br>
   <body>
     <!-- 네비게이션 바-->
     <nav class="navbar">
@@ -62,7 +50,7 @@
           <li><button type="button" class="login_btn" onclick="location.href='../login/login.html'">로그인</button></li>
       </ul>
     </nav>
-
+    
     <!-- 메인 이미지 및 설명 -->
     <div class="container mb-4">
         <div class="image">
@@ -170,7 +158,7 @@
     </div>   
   <div class="bigDiv">
     <div class="side-2" style="height: 530px;">
-      <h3 style="margin-left: 20px;">카테고리</h3>
+      <h3 style="margin-left: 10%;">카테고리</h3>
       <br>
       <div class="menu">
         <div class="btn-group mb-5">
@@ -178,10 +166,10 @@
             아웃도어 & 스포츠
           </span>
           <ul class="dropdown-menu" style="padding-left: 30px; width: 220px; height: 220px;" >
-            <li class="mb-4"><input type="checkbox"><span>캠핑 & 글램핑</span></li>
-            <li class="mb-4"><input type="checkbox"><span>루지 & 짚라인 & 어드벤처</span></li>
-            <li class="mb-4"><input type="checkbox"><span>스키 & 스노보드<span></li>
-            <li class="mb-4"><input type="checkbox"><span>모두선택</span></li>
+            <li class="mb-4"><input type="checkbox" name="sport" value="comping"><span>캠핑 & 글램핑</span></li>
+            <li class="mb-4"><input type="checkbox" name="sport" value="luge"><span>루지 & 짚라인 & 어드벤처</span></li>
+            <li class="mb-4"><input type="checkbox" name="sport" value="ski"><span>스키 & 스노보드<span></li>
+            <li class="mb-4"><input type="checkbox" name="selectAll" value="selectAll"><span>모두선택</span></li>
           </ul>
         </div>
       </div> 
@@ -191,11 +179,11 @@
             티켓 & 입장권
           </span>
           <ul class="dropdown-menu" style="padding-left: 30px; width: 220px; height: 220px;" >
-            <li class="mb-4"><input type="checkbox"><span>공원 & 자연</span></li>
-            <li class="mb-4"><input type="checkbox"><span>아쿠아리움 & 동물원</span></li>
-            <li class="mb-4"><input type="checkbox"><span>테마파크 & 워터파크<span></li>
-            <li class="mb-4"><input type="checkbox"><span>박물관 & 미술관<span></li>
-            <li class="mb-4"><input type="checkbox"><span>모두선택</span></li>
+            <li class="mb-4"><input type="checkbox" name="ticket" value="park"><span>공원 & 자연</span></li>
+            <li class="mb-4"><input type="checkbox" name="ticket" value="zoo"><span>아쿠아리움 & 동물원</span></li>
+            <li class="mb-4"><input type="checkbox" name="ticket" value="water park"><span>테마파크 & 워터파크<span></li>
+            <li class="mb-4"><input type="checkbox" name="ticket" value="museum"><span>박물관 & 미술관<span></li>
+            <li class="mb-4"><input type="checkbox" name="selectAll2" value="selectAll2"><span>모두선택</span></li>
           </ul>
         </div>
       </div>
@@ -205,9 +193,9 @@
             스파 & 테라피
           </span>
           <ul class="dropdown-menu" style="padding-left: 30px; width: 220px; height: 220px;" >
-            <li class="mb-4"><input type="checkbox"><span>온천</span></li>
-            <li class="mb-4"><input type="checkbox"><span>웰빙& 웰니스</span></li>
-            <li class="mb-4"><input type="checkbox"><span>모두선택</span></li>
+            <li class="mb-4"><input type="checkbox" name="spa" value="spa"><span>온천</span></li>
+            <li class="mb-4"><input type="checkbox" name="spa" value="wellbeing"><span>웰빙& 웰니스</span></li>
+            <li class="mb-4"><input type="checkbox" name="selectAll3" value="selectAll3"><span>모두선택</span></li>
           </ul>
         </div>
       </div>
@@ -217,9 +205,9 @@
             투어
           </span>
           <ul class="dropdown-menu" style="padding-left: 30px; width: 220px; height: 220px;" >
-            <li class="mb-4"><input type="checkbox"><span>워킹 & 자전거투어</span></li>
-            <li class="mb-4"><input type="checkbox"><span>버스 & 스쿠터 & ATV투어</span></li>
-            <li class="mb-4"><input type="checkbox"><span>모두선택</span></li>
+            <li class="mb-4"><input type="checkbox" name="tour" value="working"><span>워킹 & 자전거투어</span></li>
+            <li class="mb-4"><input type="checkbox" name="tour" value="bus"><span>버스 & 스쿠터 & ATV투어</span></li>
+            <li class="mb-4"><input type="checkbox" name="selectAll4" value="selectAll4"><span>모두선택</span></li>
           </ul>
         </div>
       </div>
@@ -229,16 +217,16 @@
             수상 액티비티
           </span>
           <ul class="dropdown-menu" style="padding-left: 30px; width: 220px; height: 220px;" >
-            <li class="mb-4"><input type="checkbox"><span>서핑</span></li>
-            <li class="mb-4"><input type="checkbox"><span>패들보드 & 카약 & 래프팅</span></li>
-            <li class="mb-4"><input type="checkbox"><span>모두선택</span></li>
+            <li class="mb-4"><input type="checkbox" name="water" value="surfing"><span>서핑</span></li>
+            <li class="mb-4"><input type="checkbox" name="water" value="kayak"><span>패들보드 & 카약 & 래프팅</span></li>
+            <li class="mb-4"><input type="checkbox" name="selectAll5" value="selectAll5"><span>모두선택</span></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="div2">
-        <h2 class="container mt-5 mb-5 row" style="float: none; margin:100 auto;">47건의 검색 결과</h2>
-        <div class="container row" style="float: none; margin:100 auto;">
+        <h2 class="container mt-5 mb-5" style="float: none; margin:100 auto;">47건의 검색 결과</h2>
+        <div class="container" style="float: none; margin:100 auto;">
           <div class="row mb-5" style="float: none; margin:0 auto;">
             <div class="col" style="flex: 0;">
               <div class="date">
@@ -247,8 +235,8 @@
             </div>
             <div class="col" style="flex: 1.0; padding: 0px;" >
               <div class="dropdown" style="margin-left: 50px;">
-                <button class="btn btn-secondary dropdown-toggle"  id="dateBtn" data-bs-toggle="dropdown" aria-expanded="false">
-                가격
+                <button class="btn btn-secondary dropdown-toggle"  id="priceBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                <span id="spanPrice">가격</span>
                 </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <div class="price">
@@ -260,22 +248,19 @@
               </div>
             </div>
             <div class="col">
-              <span class="" id="sort">정렬 : </span>
+              <span id="sort">정렬 : </span>
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle"  id="dateBtn" data-bs-toggle="dropdown" aria-expanded="false">
-                인기순
-                </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item">인기순</a></li>
-                    <li><a class="dropdown-item">별점순</a></li>
-                    <li><a class="dropdown-item">낮은가격순</a></li>
-                    <li><a class="dropdown-item">최신순</a></li>
-                  </ul>
+                <select id="sortBtn" aria-labelledby="dropdownMenuButton1">
+                    <li><option class="dropdown-item">인기순</option></li>
+                    <li><option class="dropdown-item">별점순</option></li>
+                    <li><option class="dropdown-item">낮은가격순</option></li>
+                    <li><option class="dropdown-item">최신순</option></li>
+                </select>
               </div>
             </div>
           </div>
         </div>
-        <div class="container row" style="float: none; margin:100 auto;">
+        <div class="container" style="float: none; margin:100 auto;">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="float: none; margin:0 auto;">
             <div class="col">
               <div class="card shadow-sm">
@@ -443,8 +428,8 @@
   </nav>
   
     <!-- 메이트 마감 임박 -->
-    <div class="container mt-5" >
-      <h1 class="h1">메이트 마감 임박</h1>
+    <div class="mateDiv">
+      <h1 style="margin-right: 75%;">메이트 마감 임박</h1>
       <div class="row" id="box">
         <div class="col">
           <a href="../Mate/matemain.html"><img id="mateImg" src="../../resources/image/mate.png"></a>
@@ -473,11 +458,11 @@
             <p id="date">~10/8</p>
             <button type="button" class="btn btn-success" id="btn">참여하기</button>
             </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
  <!-- 하단 footer-->
  <footer>
   <div class="footer">
