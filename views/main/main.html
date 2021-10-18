@@ -7,25 +7,103 @@
 
     <link href="../../resources/css/actibuddy.css" rel="stylesheet">
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>main</title>
+
+    <Script>
+        $(function(){
+                $("#acti_1").on({
+                    mouseover: function(){
+                        $('#acti_detail1').css('display', 'block');
+                        $('#acti_detail2').css('display', 'none');
+                    },
+                    mouseleave: function(){
+                        $('#acti_detail1').css('display','none');
+                    }
+                });
+            });
+
+            $(function(){
+                $("#acti_detail1").on({
+                    mouseover: function(){
+                        $('#acti_detail1').css('display', 'block');
+                    },
+                    mouseleave: function(){
+                        $('#acti_detail1').css('display','none');
+                    }
+                });
+            });
+            
+
+        $(function(){
+                $("#acti_2").on({
+                    mouseover: function(){
+                        $('#acti_detail2').css('display', 'block');
+                        $('#acti_detail1').css('display', 'none');
+                    },
+                    mouseleave: function(){
+                        $('#acti_detail2').css('display','none');
+                    }
+                });
+            });
+
+            $(function(){
+                $("#acti_detail2").on({
+                    mouseover: function(){
+                        $('#acti_detail2').css('display', 'block');
+                    },
+                    mouseleave: function(){
+                        $('#acti_detail2').css('display','none');
+                    }
+                });
+            });
+
+ 
+   
+
+</Script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="navbar_menu">
-            <a href="../main/main.html"><img src="../../resources/image/actibuddylogo.png" class="nav_logo"></a>
-            <li class="dropbox"><a href="../activity/activity.html">액티비티</a></li>
-            <li class="dropbox"><a href="../Mate/matemain.html">메이팅</a></li>
-            <li><input type="text" placeholder="Search"></li>
-            <li><button type="button" class="search-btn" onclick="location.href='../activity/searchActivity.html'">Submit</button></li>
-        </ul>
 
-        <ul class="navbar_link">
-            <li><a href="../FAQ/FAQ_main.html">FAQ</a></li>
-            <li><a href="../singup/signup.html">회원가입</a></li>
-            <li><button type="button" class="login_btn" onclick="location.href='../login/login.html'">로그인</button></li>
-        </ul>
-    </nav>
+<div class="activity_main">
+    <div class="navbar_menu">
+       
+        <span id="1">
+            <img src="../../resources/image/actibuddylogo.png" class="nav_logo">
+        </span>
+        <span id="acti_1">
+            <a href="../activity/activity.html">액티비티</a>
+        </span>
+        <span id="acti_2">
+            <a href="../Mate/matemain.html">메이팅</a>
+        </span>
+        <span>
+            <input type="text" placeholder="Search">
+        </span>
+        <span>
+            <button type="button" class="search-btn" onclick="location.href='../activity/searchActivity.html'">Submit</button>
+        </span>
+        <div id="acti_detail1">
+            <div>데이터</div>
+            <div>아니</div>
+        </div>
+        <div id="acti_detail2">메이팅</div>
+    </div>
+
+    <div class="navbar_link">
+        <span>
+            <a href="../FAQ/FAQ_main.html">FAQ</a>
+        </span>
+        <span>
+            <a href="../singup/signup.html">회원가입</a>
+        </span>
+        <span>
+            <button type="button" class="login_btn" onclick="location.href='../login/login.html'">로그인</button>
+        </span>
+    </div>
+
+</div>
+
 
 
         <main class="wrapper">
