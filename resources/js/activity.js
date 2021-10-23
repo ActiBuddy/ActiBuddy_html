@@ -45,7 +45,53 @@ $(function() {
   $("#amount2").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
 });
 
+$(function(){
+  $('#submit').click(function(){
+   $('#spanPrice').html($("#amount2").val); 
+  });
+})
 
+$(function(){
+  $('#check1').click(function(){
+      location.href="https://www.naver.com";
+  });
+});
+
+$(function(){
+  $('#btn').click(function(){
+    location.href="https://www.google.com";
+  });
+});
+
+$(function(){
+  $('input[name=selectAll]').click(function(){
+    $('input[name=sport]').prop('checked',this.checked);
+  });
+});
+
+$(function(){
+  $('input[name=selectAll2]').click(function(){
+    $('input[name=ticket]').prop('checked',this.checked);
+  });
+});
+
+$(function(){
+  $('input[name=selectAll3]').click(function(){
+    $('input[name=spa]').prop('checked',this.checked);
+  });
+});
+
+$(function(){
+  $('input[name=selectAll4]').click(function(){
+    $('input[name=tour]').prop('checked',this.checked);
+  });
+});
+
+$(function(){
+  $('input[name=selectAll5]').click(function(){
+    $('input[name=water]').prop('checked',this.checked);
+  });
+});
 
 
 

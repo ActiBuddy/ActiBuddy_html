@@ -28,52 +28,25 @@
     <![endif]-->
   </head>
 
-  <body>
-
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav> -->
-
-    
+  <body> 
     
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">회원 관리<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="../manager/manager_member.html">회원 관리</a></li>
             <li><a href="#">전체 회원 조회</a></li>
             <li><a href="#">경고 회원 조회</a></li>
             <li><a href="#">탈퇴 회원 조회</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">파트너십 관리</a></li>
+            <li class="active"><a href="../manager/manager_partnership(1).html">파트너십 관리</a></li>
             <li><a href="">파트너십 플랫폼 조회</a></li>
             <li><a href="">파트너십 문의 접수</a></li>
             <li><a href="">파트너십 진행 상황</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">신고 접수</a></li>
+            <li class="active"><a href="../manager/manager_declaration.html">신고 접수</a></li>
             <li><a href="">메이트 매칭</a></li>
             <li><a href="">메이트 평가</a></li>
             <li><a href="">메이팅 후기</a></li>
@@ -81,16 +54,13 @@
             <li><a href="">댓글</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">관리자 관리</a></li>
+            <li class="active"><a href="../manager/manager_manager.html">관리자 관리</a></li>
             <li><a href="">관리자 권한 부여</a></li>
             <li><a href="">관리자 파트 부여</a></li>
           </ul>
         </div>
 
-
-          <center>
           <h2 class="sub-header">전체 회원 조회</h2>
-        </center>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -217,6 +187,27 @@
                 </tr>
               </tbody>
             </table>
+
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
           </div>
         </div>
       </div>

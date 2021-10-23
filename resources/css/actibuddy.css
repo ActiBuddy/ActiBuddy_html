@@ -27,12 +27,12 @@
 /* -------------------------------- */
 .navbar1 {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   align-items: center;
   background-color: rgba(253, 253, 237, 1);
   padding: 8px 12x 8px 12px;
-  align-content: flex-start;
+  /* align-content: flex-start; */
   width: 100%;
   z-index: 9999;
   /* height: */
@@ -106,12 +106,34 @@ a {
   box-shadow: none;
 }
 
-a:hover {
+/* a:hover {
   background-color: #178817;
   border-radius: 4px;
+  height: 100%;
+} */
+
+#acti_detail1 {
+  display: none;
+  width: 200%;
   height: 40px;
+  margin-top: -5px;
+  /* border: 10px solid pink; */
+  background-color: rgb(17, 88, 17, 0.05);
+}
+#acti_detail2 {
+  display: none;
+  width: 200%;
+  height: 40px;
+  margin-top: -5px;
+
+  /* border: 10px solid pink; */
+  background-color: rgb(17, 88, 17, 0.05);
 }
 
+/* #acti_1: ~ #acti_detail1,
+#acti_2:hover ~ #acti_detail2 {
+  display: block;
+} */
 /* --------------------------------------------------- */
 .mainsearch {
   width: 45%;
