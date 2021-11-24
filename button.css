@@ -1,0 +1,33 @@
+/*버튼 공통 설정*/
+button {
+    border: 0;
+	width:43px;
+	height:43px;
+	cursor:pointer;
+    background-color: white;
+    font-size: 16px;
+}
+
+/* 숫자 눌렀을 때  */
+.page-link-num:hover {
+    background-color: rgb(207, 228, 204);
+    height: 43px;
+    border-radius: 100%;
+  }
+
+/* 누르면 고정 */
+.page-link-num:focus {
+    background-color: rgb(207, 228, 204);
+    height: 43px;
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+/* <> 눌렀을 때  */
+.page-link:hover {
+    height: 36px;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: olive;
+  }
+

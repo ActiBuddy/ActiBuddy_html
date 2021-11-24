@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../../resources/css/actibuddy.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#acti_2").on({
+          mouseover: function () {
+            $("#acti_detail2").css("display", "block");
+            $("#acti_detail1").css("display", "none");
+          },
+          mouseleave: function () {
+            $("#acti_detail2").css("display", "none");
+          },
+        });
+      });
+
+      $(function () {
+        $("#acti_detail2").on({
+          mouseover: function () {
+            $("#acti_detail2").css("display", "block");
+          },
+          mouseleave: function () {
+            $("#acti_detail2").css("display", "none");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="activity_main">
+      <div class="navbar_menu">
+        <span>
+          <img src="../../resources/image/actibuddylogo.png" class="nav_logo" />
+        </span>
+        <span id="acti_1">
+          <a href="../activity/activity.html">액티비티</a>
+        </span>
+        <span id="acti_2">
+          <a href="../Mate/matemain.html">메이팅</a>
+          <div id="acti_detail2">
+            <a href="#">메이트 매칭</a>
+            <a href="#">메이트 후기</a>
+          </div>
+        </span>
+        <span>
+          <input type="text" placeholder="Search" />
+        </span>
+        <span>
+          <button
+            type="button"
+            class="search-btn"
+            onclick="location.href='../activity/searchActivity.html'"
+          >
+            Submit
+          </button>
+        </span>
+        
+      </div>
+
+      <c:if test="${ empty sessionScope.loginMember }">
+        <div class="navbar_link">
+            <span>
+            <a href="../FAQ/FAQ_main.html">FAQ</a>
+            </span>
+            <span>
+            <a href="../singup/signup.html">회원가입</a>
+            </span>
+            <span>
+            <button
+                type="button"
+                class="login_btn"
+                onclick="location.href='../login/login.html'"
+            >
+                로그인
+            </button>
+            </span>
+        </div>
+    </c:if>
+	
+	<!—  로그인 되었을 때 —>
+		<c:if test="${ !empty sessionScope.loginMember }">
+			<div class="navbar_link2">
+                <div>ㅇㅇㅇ님의 방문을 환영합니다.</div>
+                <span>
+                <a href="../FAQ/FAQ_main.html">FAQ</a>
+                </span>
+                <span>
+                <a href="../mypage/mypage.html" style="color:green; font-weight: bold;">마이페이지</a>
+                </span>
+                <span>
+                <button
+                    type="button"
+                    class="logout_btn"
+                    onclick="location.href='../login/login.html'"
+                >
+                    로그아웃
+                </button>
+                </span>
+            </div>
+		</c:if>
+	</div>
+    </div>
+  </body>
+</html>

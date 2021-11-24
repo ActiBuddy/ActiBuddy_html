@@ -1,7 +1,5 @@
-
-   
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,16 +7,43 @@
     <link href="../../resources/css/actibuddy.css" rel="stylesheet" />
     <link href="../../resources/css/mateFind_writing.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      /* 조건 알럿 */
+      $(function() {
+        $('.btnok').click(function() {
+          if($('select[name=location]').val() == 'none') {
+            alert('지역을 입력해주세요.');
+          } else {
+            if($('input[class="write_title"]').val() == ''){
+            alert('제목을 선택해주세요.');
+            } else {
+              if($('input[name=rgdate]').val() == '') {
+                alert('날짜를 선택해주세요.');
+              } 
 
+               else {
+                if($('textarea[class=write_text]').val() == '') {
+                  alert('내용을 입력해주세요.');
+                } else {
+                  $(location).attr('href', 'matemain.html');
+                }
+              }
+            }
+          }
+        });
+      });
+
+    </script>
+  
     <title>메이트 글 작성</title>
   </head>
   <body>
     <!-- 네비게이션바 -->
     <nav class="navbar">
       <ul class="navbar_menu">
-        <a href="../main/main.html"
-          ><img src="../../resources/image/actibuddylogo.png" class="nav_logo"
-        /></a>
+        <a href="../main/main.html">
+        <img src="../../resources/image/actibuddylogo.png" class="nav_logo"/>
+        </a>
         <li class="dropbox">
           <a href="../activity/activity.html">액티비티</a>
         </li>
@@ -27,8 +52,7 @@
         <li>
           <button
             type="button"
-            onclick="location.href='../activity/searchActivity.html'"
-          >
+            onclick="location.href='../activity/searchActivity.html'">
             Submit
           </button>
         </li>
@@ -50,9 +74,43 @@
     </nav>
      <!-- 주요 html -->
     <div class="around">
-        <!-- 액티비티 이미지 -->
+        <!-- 액티비티 이미지   -->
         <div class="activity">
-            <img src="../../resources/image/faq_main.jpeg" />
+            <button class="showbtn" id="showbtn">액티비티 선택하기</button>
+            <div class="background">
+              <div class="window">
+                <div class="popup">
+                  <img class="popimg" src="../../resources/image/ch_acti.png">
+                  <div class="aback">
+                    <img class="abackimg" src="../../resources/image/ch1.png">
+                    <img class="abackimg" src="../../resources/image/ch2.png">
+                    <img class="abackimg" src="../../resources/image/ch3.png">
+                    <img class="abackimg" src="../../resources/image/ch4.png">
+                    <div class="chborder">
+                      <input type="checkbox" name="acti" value="ch1" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch2" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch3" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch4" onclick='checkOnlyOne(this)'>
+                    </div>
+                    <img class="abackimg" src="../../resources/image/ch5.png">
+                    <img class="abackimg" src="../../resources/image/ch6.png">
+                    <img class="abackimg" src="../../resources/image/ch7.png">
+                    <img class="abackimg" src="../../resources/image/ch8.png">
+                    <div class="chborder">
+                      <input type="checkbox" name="acti" value="ch5" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch6" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch7" onclick='checkOnlyOne(this)'>
+                      <input type="checkbox" name="acti" value="ch8" onclick='checkOnlyOne(this)'>
+                    </div>
+                  </div>
+                  <div class="abtn">
+                  <button id="apply" type="submit">적용</button>
+                  <button id="close">닫기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <img class="popimg" src="../../resources/image/faq_main.jpeg" /> -->
         </div>
         <!-- 제목 부분 -->
         <div class="title">
@@ -73,38 +131,17 @@
                 </select>
             </div>
             <div class="third">
-                <p>같이 여수갈 사람 구해요 ! ! !</p>
+                <input type="text" class="write_title" maxlength="25" placeholder="제목을 입력해주세요.">
             </div>
         </div>
       </div>
 
       <div class="writer">
         <div class="fix">작성자 :</div>
-        <div class="name">parisbaguette</div>
+        <div class="name"><a href="../mypage/mypage.html">parisbaguette</a></div>
       </div>
 
       <hr>
-
-      <!-- <div class="choose">
-        <div class="border">
-          <div class="condition">인원현황</div>
-          <div class="yellowback">
-            <div class="imgborder1">
-              <img src="../../resources/image/c_one.png" />
-            </div>
-            <div class="selectborder">
-              <select class="people">
-                <option value="2">1/2</option>
-                <option value="3">1/3</option>
-                <option value="4">1/4</option>
-                <option value="5">1/5</option>
-                <option value="6">1/6</option>
-              </select>
-            </div>
-          </div>
-        </div> -->
-    
-        
         
         <!-- 선택박스 부분 -->
         <div class="choose">
@@ -117,12 +154,12 @@
                        <img src="../../resources/image/c_one.png">
                    </div>
                    <div class="selectborder">
-                       <select class="people">
-                          <option value="2">1/2</option>
-                          <option value="3">1/3</option>
-                          <option value="4">1/4</option>
-                          <option value="5">1/5</option>
-                          <option value="6">1/6</option>
+                       <select class="people" name="people">
+                          <option value="2">( 1 / 2 ) 명</option>
+                          <option value="3">( 1 / 3 ) 명</option>
+                          <option value="4">( 1 / 4 ) 명</option>
+                          <option value="5">( 1 / 5 ) 명</option>
+                          <option value="6">( 1 / 6 ) 명</option>
                        </select>
                    </div>
                </div>
@@ -132,9 +169,11 @@
           <div class="condition">신청기간</div>
           <div class="yellowback">
             <div class="imgborder1">
-              <img src="../../resources/image/c_two.png" />
+              <img src="../../resources/image/c_two.png"/>
             </div>
-            <div class="selectborder"><input type="date" /><br /></div>
+            <div class="selectborder">
+              <input type="date" name="rgdate">
+            </div>
           </div>
         </div>
 
@@ -142,17 +181,30 @@
           <div class="condition">성별</div>
           <div class="yellowback">
             <div class="imgborder2">
-              <img src="../../resources/image/both.png" />
+              <img id="genimg" src="../../resources/image/both.png" />
             </div>
             <div class="selectborder">
-              <select class="gender">
+              <select id="gender" class="gender">
                 <option value="both">남녀무관</option>
-                <option value="men">남자만</option>
-                <option value="women">여자만</option>
+                <option value="men">남성만</option>
+                <option value="women">여성만</option>
               </select>
             </div>
           </div>
         </div>
+
+        <script>
+          $("#gender").change(function () {
+            if($(this).val() == "both") {
+              $("#genimg").attr("src","../../resources/image/both.png");
+            } else if ($(this).val() == "men") {
+              $("#genimg").attr("src","../../resources/image/men.png");
+            } else if ($(this).val() == "women") {
+              $("#genimg").attr("src","../../resources/image/women.png");
+            }
+          });
+
+        </script>
 
         <div class="border">
           <div class="condition">희망연령</div>
@@ -181,14 +233,46 @@
        </div>
        <!-- 버튼 부분 -->
        <div class="btnborder">
-          <button class="btnok"><a href="#">등록</a></button>
-          <button class="btnno"><a href="#">취소</a></button>
+          <button type="submit" class="btnok">등록</button>
+          <button class="btnno" onclick="location.href='#'">취소</button>
        </div>
-
+       <!-- onclick="location.href='#'" -->
       <div class="mate5"></div>
 
       <!-- 찐짜div-->
     </div>
+
+    <script>
+      /* 버튼 스크립트 */
+      function show () {
+          document.querySelector(".background").className = "background show";
+       }
+
+      function close () { 
+          document.querySelector(".background").className = "background";
+       }
+
+       // 버튼 클릭
+       document.querySelector("#showbtn").addEventListener('click', show);
+       // 적용, 취소 버튼
+       document.querySelector("#apply").addEventListener('click', close);
+       document.querySelector("#close").addEventListener('click', close);
+    
+       /* 체크박스 스크립트 */
+       function checkOnlyOne(element) {
+  
+           const checkboxes 
+              = document.getElementsByName("acti");
+          
+          checkboxes.forEach((cb) => {
+            cb.checked = false;
+          })
+          
+          element.checked = true;
+        }
+
+    </script>
+
 
     <footer>
       <div class="footer">
