@@ -13,19 +13,19 @@
     <script>
        
       // 아이디 정의
-    //  $(function(){
-    //       $('#id').keyup(function(){
-    //           let regExp = /^[가-힣]+$/;
+     $(function(){
+          $('#id').keyup(function(){
+              let regExp = /^[가-힣]+$/;
 
-    //           if(!regExp.test($(this).val())){
-    //               $('#idResult').html('한글로 입력하세요!').css('color','red')
-    //               $(this).focus().css('background','lightpink');
-    //           }else{
-    //               $('#idResult').html('맞았습니다~!').css('color','blue')
-    //               $(this).focus().css('background','palegreen');
-    //           }
-    //       });
-    //       });
+              if(!regExp.test($(this).val())){
+                  $('#idResult').html('한글로 입력하세요!').css('color','red')
+                  $(this).focus().css('background','lightpink');
+              }else{
+                  $('#idResult').html('맞았습니다~!').css('color','blue')
+                  $(this).focus().css('background','palegreen');
+              }
+          });
+          });
          
       // 이름 정의
      $(function(){
